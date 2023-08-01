@@ -10,20 +10,41 @@
               theme: {
                 extend: {
                   colors: {
-                    clifford: '#da373d',
                     cyan: "hsl(178, 100%, 50%)",
-                    mainbgblue: "hsl(215, 51%, 70%)",
-                    bgcardblue: "hsl(217, 54%, 11%)",
+                    softblue:"hsl(215, 51%, 70%)",
+                    mainbgblue: "hsl(217, 54%, 11%)",
+                    cardblue: "hsl(216, 50%, 16%)",
                     lineblue: "hsl(216, 50%, 16%)",
                     white: "hsl(0, 0%, 100%)"
                   }
                 }
               }
             }
-          </script>
+        </script>
         <link rel="stylesheet" href="index.css" />
     </head>
-    <body>
-        <div class="container "></div>
+    <body class="bg-mainbgblue m-0 p-0 h-full">
+      <section flex justify-center w-full h-full>
+        <div
+            class="container bg-cardblue  w-4/5 h-full rounded-lg flex-col justify-center content-center mx-8 mt-20 px-7 "
+        >
+            <div w-24 h-40  ->
+                <img
+                    class="rounded-lg w-56 "
+                    src="./assets/images/image-equilibrium.jpg"
+                    alt="nftImage"
+                />
+            </div>
+            <div>
+              <p class="text-white text-lg mt-4 ">Equilibrium #3429</p>
+              <p class="text-softblue">Our Equilibrium collection premotes balance and calm</p>
+            </div>
+            <section>
+            <section class="container flex-row">
+              <div class="mt-4">
+                <img src="./assets/images/icon-ethereum.svg" alt="">
+                <img src="./assets/images/icon-clock.svg" alt="">
+            </section>
+        </div>
     </body>
 </html>
