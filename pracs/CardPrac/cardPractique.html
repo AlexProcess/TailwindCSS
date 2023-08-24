@@ -24,19 +24,27 @@
         <link rel="stylesheet" href="index.css" />
     </head>
     <body class="bg-mainbgblue m-0 p-0 h-full">
-      <section flex justify-center w-full h-full>
+      <section class="justify-center w-full h-full" >
         <div
-            class="container bg-cardblue  w-4/5 h-full rounded-lg flex-col justify-center content-center mx-8 mt-20 px-7 "
+            class="container bg-cardblue w-4/5 h-full rounded-lg flex-col justify-center content-center mx-8 mt-20 px-7 xl:w-1/5 xl:flex-row xl:justify-center xl:items-center"
         >
-            <div w-24 h-40 ->
+            <div >
                 <img
-                    class=" rounded-lg w-56  py-8 "
+                    class=" w-56 py-8 rounded-lg overflow-hidden hover:bg-icon-view "
                     src="./assets/images/image-equilibrium.jpg"
                     alt="nftImage"
                 />
+                <style>
+                  .hover\:bg-icon-view:hover {
+                    background: url("./assets/images/icon-view.svg");
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                  }
+                </style>
             </div>
             <div>
-              <p class="text-white text-lg mt-4 ">Equilibrium #3429</p>
+              <p class="text-white hover:text-cyan cursor-pointer text-lg mt-4 ">Equilibrium #3429</p>
               <p class="text-softblue">Our Equilibrium collection premotes balance and calm</p>
             </div>
             <section/>
@@ -50,14 +58,14 @@
                 <p class="text-lg text-softblue">3 days left</p>
               </div>
             </section>
-            <div class="p-4 align-center justify-center">
-              <hr class="w-52 h-0.5 mx-auto my-4 bg-gray-100 border-0  dark:bg-gray-700">
+            <div class=" align-center justify-center">
+              <hr class="w-58 h-0.5 mx-auto my-4 bg-gray-100 border-0  dark:bg-gray-700">
             </div>
             <div class="flex items-center py-2 justify-center">
               <img class="object-cover w-12 mr-2" src="./assets/images/image-avatar.png">
               <div>
-                <p>Creation of Jules Wivern</p>
-                <p class="text-white">Jules Wivern</p>
+                <p class="text-softblue">Creation of Jules Wivern</p>
+                <p class="text-white hover:text-cyan cursor-pointer">Jules Wivern</p>
               </div>
             </div>
     </body>
