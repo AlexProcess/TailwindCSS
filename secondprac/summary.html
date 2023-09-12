@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Summary</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+                  tailwind.config = {
+                    theme: {
+                      extend: {
+                        backgroundImage: {
+              'mobile-pattern': "url('/img/pattern-background-mobile.svg')",
+              'desktop-pattern': "url('/img/pattern-background-desktop.svg')",
+            },
+                        colors: {
+                          paleblue: "hsl(225, 100%, 94%)",
+                          brightblue:"hsl(245, 75%, 52%)",
+                          verypaleblue: "hsl(225, 100%, 98%)",
+                          desaturatedblue: "hsl(224, 23%, 55%)",
+                          darkblue: "hsl(223, 47%, 23%)"
+                        }
+                      }
+                    }
+                  }
+        </script>
+    </head>
+    <body
+        class="min-[350px]:bg-[url('/img/pattern-background-mobile.svg')]"
+    ></body>
+</html>
