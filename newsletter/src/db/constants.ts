@@ -1,4 +1,2 @@
-export const REACT_APP_SUPABASE_URL: string | any =
-    process.env.REACT_APP_SUPABASE_URL;
-export const REACT_APP_SUPABASE_KEY: string | any =
-    process.env.REACT_APP_SUPABASE_KEY;
+export const REACT_APP_SUPABASE_URL = import.meta.env.REACT_APP_SUPABASE_URL;
+export const REACT_APP_SUPABASE_KEY = import.meta.env.REACT_APP_SUPABASE_KEY;
