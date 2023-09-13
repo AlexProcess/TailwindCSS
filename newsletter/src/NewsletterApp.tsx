@@ -12,7 +12,7 @@ export const NewsletterApp: React.FC<NewsletterProps> = ({}) => {
             <BgMobile />
             <InitialText />
             <Form />
-            <EnvironmentVariables />
+            {/* <EnvironmentVariables /> */}
         </div>
     );
 };
