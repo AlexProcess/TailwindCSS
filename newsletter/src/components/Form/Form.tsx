@@ -9,7 +9,7 @@ export const Form = () => {
 
         try {
             const { data, error } = await supabase
-                .from("subscribers")
+                .from("NewsletterTableDB")
                 .insert([{ email }]);
 
             if (error) {

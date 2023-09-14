@@ -6,3 +6,7 @@ import { NewsletterApp } from "./NewsletterApp";
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
     <NewsletterApp />
 );
+
+//!ToDo: Desktop design
+//!ToDo: Active states
+//!ToDo: Success screen
