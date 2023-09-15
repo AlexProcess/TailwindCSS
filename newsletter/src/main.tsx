@@ -7,6 +7,6 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
     <NewsletterApp />
 );
 
-//!ToDo: Desktop design
-//!ToDo: Active states
-//!ToDo: Success screen
+//!ToDo: Success screen ST
+//!ToDo: Desktop design ND
+//!ToDo: Active states RD

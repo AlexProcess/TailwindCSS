@@ -34,7 +34,7 @@ export const Form = () => {
             <div className="flex justify-center mt-2 align-center">
                 <form className="w-full" onSubmit={handleSubscription}>
                     <input
-                        className="w-full h-12 p-5 mb-2 text-sm text-gray-700 border rounded-md border-grey focus:border-red-500 focus:outline-none"
+                        className="min-[320px]:w-full h-12 p-5 mb-2 text-sm text-gray-700 border rounded-md border-grey focus:border-red-500 focus:outline-none"
                         type="text"
                         placeholder="email@company.com"
                         value={email}
