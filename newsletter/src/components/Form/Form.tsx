@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import { supabase } from "../../db/api";
+import { useNavigate } from "react-router";
 
 export const Form = () => {
+    const navigate = useNavigate();
+
     const [email, setEmail] = useState("");
 
     const handleSubscription = async (e: any) => {
@@ -41,7 +44,10 @@ export const Form = () => {
                         onChange={(e) => setEmail(e.target.value)}
                     />
                     <div className="flex justify-center mt-3">
-                        <button className="px-12 py-3 font-bold text-white border border-blue-700 rounded-md bg-dark-slate hover:bg-blue-700">
+                        <button
+                            onClick={() => navigate("/form-success")}
+                            className="px-12 py-3 font-bold text-white border border-blue-700 rounded-md bg-dark-slate hover:bg-blue-700"
+                        >
                             Suscribe to monthly newsletter
                         </button>
                     </div>
