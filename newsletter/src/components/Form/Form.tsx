@@ -22,6 +22,8 @@ export const Form = () => {
                 );
             } else {
                 console.log("Correo electrónico guardado con éxito:", data);
+
+                navigate("/form-success", { state: { email } });
             }
         } catch (error: any) {
             console.error(
@@ -45,7 +47,7 @@ export const Form = () => {
                     />
                     <div className="flex justify-center mt-3">
                         <button
-                            onClick={() => navigate("/form-success")}
+                            type="submit" // Cambia onClick a type="submit"
                             className="px-12 py-3 font-bold text-white border border-blue-700 rounded-md bg-dark-slate hover:bg-blue-700"
                         >
                             Suscribe to monthly newsletter
