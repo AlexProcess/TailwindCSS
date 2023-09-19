@@ -27,7 +27,7 @@ export const NewsletterApp: React.FC<NewsletterProps> = ({}) => {
     return (
         <div>
             <div
-                className="min-w-[1440] flex
+                className="min-w-[1440]:flex
                 place-content-around flex-row-reverse"
             >
                 {isDesktop ? <BgDesktop /> : <BgMobile />}

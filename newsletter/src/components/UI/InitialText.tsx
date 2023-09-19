@@ -4,11 +4,11 @@ export const InitialText = () => {
     return (
         <section className="flex-col p-6 space-y-2">
             <div className="">
-                <h1 className="text-4xl font-bold text-dark-slate min-w-[1440] text-5xl">
+                <h1 className="text-4xl font-bold text-dark-slate min-w-[1440]:text-5xl">
                     Stay updated!
                 </h1>
             </div>
-            <div className="min-w-[1440] w-4/5">
+            <div className="min-w-[1440]:w-4/5">
                 <p className="font-normal text-dark-slate ">
                     Join 60,000+ product managers receiving monthly updates on:
                 </p>
