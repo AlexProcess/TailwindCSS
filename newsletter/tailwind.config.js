@@ -6,7 +6,14 @@ export default {
             mobile: "375px",
             desktop: "1440px",
         },
-        extend: {},
+        extend: {
+            outlineOffset: {
+                1: "1px",
+            },
+            boxShadow: {
+                custom: "-2px 18px 56px 0px rgba(255, 141, 72, 0.56)",
+            },
+        },
         colors: {
             tomato: "hsl(4, 100%, 67%)",
             "dark-slate": "hsl(234, 29%, 20%)",

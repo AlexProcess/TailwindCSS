@@ -39,7 +39,7 @@ export const Form: React.FC = () => {
             <div className="flex justify-center mt-2 align-center">
                 <form className="w-full " onSubmit={handleSubscription}>
                     <input
-                        className="min-[320px]:w-full h-12 p-5 mb-2 text-sm text-gray-700 border rounded-md border-grey focus:border-red-500 focus:outline-none"
+                        className="min-[320px]:w-full h-12 p-5 mb-2 text-sm text-gray-700 border rounded-md border-grey focus:border-red-500 focus:outline-offset-1"
                         type="text"
                         placeholder="email@company.com"
                         value={email}
@@ -47,8 +47,8 @@ export const Form: React.FC = () => {
                     />
                     <div className="flex justify-center mt-3">
                         <button
-                            type="submit" // Cambia onClick a type="submit"
-                            className="px-12 py-3 font-bold text-white border border-blue-700 rounded-md bg-dark-slate hover:bg-blue-700"
+                            type="submit"
+                            className="hover:shadow-custom transition duration-150 ease-in-out hover:bg-gradient-to-r from-[#ff5b64] via-[#ff675c] to-[#ff8d48] px-12 py-3 font-bold text-white border border-blue-700 rounded-md bg-dark-slate "
                         >
                             Suscribe to monthly newsletter
                         </button>

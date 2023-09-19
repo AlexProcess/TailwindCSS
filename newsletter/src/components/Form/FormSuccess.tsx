@@ -28,7 +28,7 @@ export const FormSuccess: React.FC = ({}) => {
                 </div>
                 <button
                     onClick={() => navigate("/")}
-                    className="absolute px-12 py-3 font-bold text-white border border-blue-700 rounded-md left-5 right-5 bottom-8 bg-dark-slate hover:bg-blue-700"
+                    className="hover:shadow-custom transition duration-150 ease-in-out hover:bg-gradient-to-r from-[#ff5b64] via-[#ff675c] to-[#ff8d48] absolute px-12 py-3 font-bold text-white border border-blue-700 rounded-md left-5 right-5 bottom-8 bg-dark-slate hover:bg-blue-700"
                 >
                     Dismiss messsage
                 </button>
