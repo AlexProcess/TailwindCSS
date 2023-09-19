@@ -26,9 +26,13 @@ export const NewsletterApp: React.FC<NewsletterProps> = ({}) => {
 
     return (
         <div>
-            {/* <FormSuccess /> */}
-            {isDesktop ? <BgDesktop /> : <BgMobile />}
-            <InitialText />
+            <div
+                className="min-w-[1440] flex
+                place-content-around flex-row-reverse"
+            >
+                {isDesktop ? <BgDesktop /> : <BgMobile />}
+                <InitialText />
+            </div>
             <Form />
         </div>
     );

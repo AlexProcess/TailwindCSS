@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { supabase } from "../../db/api";
 import { useNavigate } from "react-router";
 
-export const Form = () => {
+export const Form: React.FC = () => {
     const navigate = useNavigate();
 
     const [email, setEmail] = useState("");
@@ -37,7 +37,7 @@ export const Form = () => {
         <div className="flex-col px-6">
             <p className="text-sm font-bold">Email address</p>
             <div className="flex justify-center mt-2 align-center">
-                <form className="w-full" onSubmit={handleSubscription}>
+                <form className="w-full " onSubmit={handleSubscription}>
                     <input
                         className="min-[320px]:w-full h-12 p-5 mb-2 text-sm text-gray-700 border rounded-md border-grey focus:border-red-500 focus:outline-none"
                         type="text"
