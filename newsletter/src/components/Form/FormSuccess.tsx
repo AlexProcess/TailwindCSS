@@ -1,4 +1,3 @@
-import React from "react";
 import { IconSuccess } from "../../assets/images/icon-success";
 import { useLocation, useNavigate } from "react-router";
 

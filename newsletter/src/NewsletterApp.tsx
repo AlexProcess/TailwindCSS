@@ -1,9 +1,9 @@
 import "./index.css";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { BgMobile } from "./assets/images/illustration-sign-up-mobile";
 import { BgDesktop } from "./assets/images/illustration-sign-up-desktop";
-import { InitialText } from "./components/UI/InitialText";
-import { Form } from "./components/Form/Form";
+import { MainContent } from "./components/UI/MainContent";
+// import { Form } from "./components/Form/Form";
 
 interface NewsletterProps {}
 
@@ -26,14 +26,11 @@ export const NewsletterApp: React.FC<NewsletterProps> = ({}) => {
 
     return (
         <div>
-            <div
-                className="min-w-[1440]:flex
-                place-content-around flex-row-reverse"
-            >
+            <div className="2xl:flex-row-reverse 2xl:flex 2xl:place-content-around">
                 {isDesktop ? <BgDesktop /> : <BgMobile />}
-                <InitialText />
+                <MainContent />
             </div>
-            <Form />
+            {/* <Form /> */}
         </div>
     );
 };
