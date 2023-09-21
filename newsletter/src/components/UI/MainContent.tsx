@@ -4,12 +4,12 @@ import { supabase } from "../../db/api";
 import { useNavigate } from "react-router";
 
 export const MainContent: React.FC = ({}) => {
+    const navigate = useNavigate();
+
     const [email, setEmail] = useState("");
 
     const handleSubscription = async (e: any) => {
         e.preventDefault();
-
-        const navigate = useNavigate();
 
         try {
             const { data, error } = await supabase
@@ -74,7 +74,7 @@ export const MainContent: React.FC = ({}) => {
                     <div className="flex justify-center mt-2 align-center">
                         <form className="w-full " onSubmit={handleSubscription}>
                             <input
-                                className="h-12 p-5 mb-2 text-sm text-gray-700 border rounded-md sm:w-full border-grey focus:border-red-500 focus:outline-offset-1"
+                                className="h-12 p-5 mb-2 text-sm text-gray-700 border rounded-lg sm:w-full border-grey focus:border-red-500 focus:outline-offset-1"
                                 type="text"
                                 placeholder="email@company.com"
                                 value={email}
@@ -83,7 +83,7 @@ export const MainContent: React.FC = ({}) => {
                             <div className="flex justify-center mt-3">
                                 <button
                                     type="submit"
-                                    className="w-full hover:shadow-custom transition duration-150 ease-in-out hover:bg-gradient-to-r from-[#ff5b64] via-[#ff675c] to-[#ff8d48] px-12 py-3 font-bold text-white border border-blue-700 rounded-md bg-dark-slate "
+                                    className="w-full hover:shadow-custom transition duration-150 ease-in-out hover:bg-gradient-to-r from-[#ff5b64] via-[#ff675c] to-[#ff8d48] px-12 py-3 font-bold text-white border border-blue-700 rounded-lg bg-dark-slate "
                                 >
                                     Suscribe to monthly newsletter
                                 </button>

@@ -1,9 +1,7 @@
-import "./index.css";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { BgMobile } from "./assets/images/illustration-sign-up-mobile";
 import { BgDesktop } from "./assets/images/illustration-sign-up-desktop";
 import { MainContent } from "./components/UI/MainContent";
-// import { Form } from "./components/Form/Form";
 
 interface NewsletterProps {}
 
@@ -30,7 +28,6 @@ export const NewsletterApp: React.FC<NewsletterProps> = ({}) => {
                 {isDesktop ? <BgDesktop /> : <BgMobile />}
                 <MainContent />
             </div>
-            {/* <Form /> */}
         </div>
     );
 };
