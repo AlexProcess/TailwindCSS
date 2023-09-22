@@ -7,6 +7,7 @@ export const MainContent: React.FC = ({}) => {
     const navigate = useNavigate();
 
     const [email, setEmail] = useState("");
+    const [hasError, setHasError] = useState(false);
 
     const handleSubscription = async (e: any) => {
         e.preventDefault();
@@ -74,8 +75,12 @@ export const MainContent: React.FC = ({}) => {
                     <div className="flex justify-center mt-2 align-center">
                         <form className="w-full " onSubmit={handleSubscription}>
                             <input
-                                className="h-12 p-5 mb-2 text-sm text-gray-700 border rounded-lg sm:w-full border-grey focus:border-red-500 focus:outline-offset-1"
-                                type="text"
+                                className={`h-12 p-5 mb-2 text-sm text-gray-700 rounded-lg sm:w-full focus:outline-none ${
+                                    hasError
+                                        ? "border border-red-500"
+                                        : "border border-gray-300"
+                                }`}
+                                type="email"
                                 placeholder="email@company.com"
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
